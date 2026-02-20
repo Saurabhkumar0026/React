@@ -1,0 +1,18 @@
+{
+  "Data": [
+    {
+      "id": "e24f",
+      "rollno": "102",
+      "name": "saurabh",
+      "city": "indore",
+      "fees": "34000"
+    },
+    {
+      "id": "1b62",
+      "name": "saurabh",
+      "rollno": "110",
+      "city": "bhopal",
+      "age": "19"
+    }
+  ]
+}
