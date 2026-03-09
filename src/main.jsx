@@ -1,11 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import './saurabh.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginContext from './LoginContext.jsx';
+
+import store from './Store.jsx';
+import { Provider } from 'react-redux';
+
 createRoot(document.getElementById('root')).render(
-    <LoginContext>    
-        <App />
-    </LoginContext>
+
+    <Provider store={store}>
+        <App/>
+    </Provider>
 
 )
