@@ -24,11 +24,20 @@ const colorSlice = createSlice({
                     state.task[i].complete = false;
                 }
             }
+        },
+        editdatasave:(state,actions)=>{
+            for (var i=0;i<state.task.length;i++)
+            {
+                if(state.task[i].id==actions.payload.id)
+                {
+                    state.task[i].work=actions.payload.work;
+                }
+            }
         }
 
     }
 }
     
 )
-export const { addTask,recDel,taskComp,taskInComp } = colorSlice.actions;
+export const { addTask,recDel,taskComp,taskInComp,editdatasave } = colorSlice.actions;
 export default colorSlice.reducer;
